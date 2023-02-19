@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts/main.js" defer></script>
-  </head>
-  <body>
-  </body>
+<html>
+<head>
+	<title>Max's Coffee Shop Menu</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>Max's Coffee Shop</h1>
+	</header>
+	<main>
+		<h2>Menu</h2>
+		<section class="menu">
+			<article>
+				<h3>Oatmilk Ice Latte</h3>
+				<img src="oat.jpg">
+				<p>Smooth and creamy oatmilk with a shot of espresso over ice</p>
+				<p class="price">$5</p>
+				<input type="number" value="0" min="0" class="quantity" data-price="5" data-name="Oatmilk Ice Latte">
+			</article>
+			<article>
+				<h3>Chai Latte</h3>
+				<img src="chai.jpg">
+				<p>Warm and spicy blend of black tea, milk, and spices</p>
+				<p class="price">$4</p>
+				<input type="number" value="0" min="0" class="quantity" data-price="4" data-name="Chai Latte">
+			</article>
+			<article>
+				<h3>Vanilla Coldbrew Special</h3>
+				<img src="cold.jpg">
+				<p>Refreshing coldbrew coffee with a hint of vanilla</p>
+				<p class="price">$5.5</p>
+				<input type="number" value="0" min="0" class="quantity" data-price="5.5" data-name="Vanilla Coldbrew Special">
+			</article>
+		</section>
+		<section class="order-form">
+			<h3>Order Form</h3>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone">
+				<label for="address">Address:</label>
+				<textarea id="address" name="address"></textarea>
+				<button type="submit">Place Order</button>
+			</form>
+		</section>
+		<section class="order-total">
+			<h3>Order Total</h3>
+			<ul id="order-items"></ul>
+			<p id="total-price">Total Price: $0</p>
+		</section>
+	</main>
+	<footer>
+		<p>For the Bay Area Immersion Program</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
 </html>
